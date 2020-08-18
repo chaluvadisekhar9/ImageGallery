@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #header{
+           background-color: blue;
+           text-align: center;
+           text-transform: uppercase;
+           color: white;
+
+        }
+        #main{  
+            width: 100%;
+            height: auto;
+        }
+        #img{
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            margin: 0px;
+            padding: 0px;
+            border-style: outset;
+            border-width: 5px;
+            border-color:red;
+            width: 33.33%;
+            height: auto;
+            border-radius: 15px;
+        }
+        #footer{
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            color: blue;
+            text-transform: uppercase;
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div id="wraper">
+        <div id="header">
+            <h1>Image Gallery</h1>
+        </div>
+        <div id="main">
+            <div id="img">
+                <img src="img.jpg" alt="img">
+                <img src="img.jpg" alt="img">
+                <img src="img.jpg" alt="img">
+            </div>
+            <div id="img">
+                <img src="img.jpg" alt="img">
+                <img src="img.jpg" alt="img">
+                <img src="img.jpg" alt="img">
+            </div>
+            <div id="img">
+                <img src="img.jpg" alt="img">
+                <img src="img.jpg" alt="img">
+                <img src="img.jpg" alt="img">
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copy Right @ 2020 Speed Academy All Rights Reserved</p>
+        </div>
+        <script>
+        var count=0;
+        if(count<4){
+            count++;
+            console.log(count);
+        }
+        </script>
+    </div>
+</body>
+</html>
